@@ -1,0 +1,7 @@
+/target
+/.vscode
+/env
+/Cargo.lock
+/dist
+/build
+/rumpy.egg-info

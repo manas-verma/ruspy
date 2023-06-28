@@ -1,0 +1,20 @@
+[package]
+name = "ruspy"
+version = "0.1.0"
+edition = "2021"
+authors = ["Manas Verma <manas.verma@gmail.com>"]
+
+[lib]
+name = "ruspy"
+crate-type = ["cdylib"]
+
+[dependencies]
+libc = "0.2"
+num-complex = "0.4.3"
+num-traits = "0.2.15"
+pyo3 = { version = "0.19", features = [
+  "extension-module",
+  "abi3",
+  "abi3-py37",
+] }
+rustfft = "6.1.0"
